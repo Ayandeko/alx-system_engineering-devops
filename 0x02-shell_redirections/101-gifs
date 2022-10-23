@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -arS | find * -maxdepth 1 -type f | sed -e 's/\.gif$//'
+find . -type f -name *.gif | sed -e 's/\.gif$//' | sort -f
